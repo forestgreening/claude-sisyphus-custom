@@ -22,7 +22,7 @@ Oh-My-ClaudeCode-Sisyphus is an enhancement system for Claude Code (Anthropic's 
 ```
 oh-my-claude-sisyphus/
 ├── src/
-│   ├── agents/              # 11 agent definitions
+│   ├── agents/              # 13 agent definitions
 │   │   ├── definitions.ts   # Agent registry & configs
 │   │   ├── types.ts         # Agent type definitions
 │   │   ├── utils.ts         # Shared utilities
@@ -88,12 +88,14 @@ oh-my-claude-sisyphus/
 | **explore** | Haiku | Fast codebase search | Quick pattern matching |
 | **sisyphus-junior** | Sonnet | Focused execution | Direct task implementation |
 | **frontend-engineer** | Sonnet | UI/UX work | Component design, styling |
+| **flutter-engineer** | Sonnet | Flutter/Dart | Mobile app development |
 | **document-writer** | Haiku | Technical docs | README, API docs |
 | **multimodal-looker** | Sonnet | Visual analysis | Screenshots, diagrams |
 | **momus** | Opus | Plan review | Critical evaluation |
 | **metis** | Opus | Pre-planning | Hidden requirements |
 | **orchestrator-sisyphus** | Sonnet | Todo coordination | Task delegation |
 | **prometheus** | Opus | Strategic planning | Interview-style planning |
+| **founder** | Opus | Service ideation | New project/service planning |
 
 ## HOOKS
 

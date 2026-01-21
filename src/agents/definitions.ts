@@ -7,6 +7,8 @@
  */
 
 import type { AgentConfig, ModelType } from '../shared/types.js';
+import { founderAgent } from './founder.js';
+import { flutterEngineerAgent } from './flutter-engineer.js';
 
 /**
  * Oracle Agent - Architecture and Debugging Expert
@@ -1062,13 +1064,15 @@ export function getAgentDefinitions(overrides?: Partial<Record<string, Partial<A
     librarian: librarianAgent,
     explore: exploreAgent,
     'frontend-engineer': frontendEngineerAgent,
+    'flutter-engineer': flutterEngineerAgent,
     'document-writer': documentWriterAgent,
     'multimodal-looker': multimodalLookerAgent,
     momus: momusAgent,
     metis: metisAgent,
     'orchestrator-sisyphus': orchestratorSisyphusAgent,
     'sisyphus-junior': sisyphusJuniorAgent,
-    prometheus: prometheusAgent
+    prometheus: prometheusAgent,
+    founder: founderAgent
   };
 
   const result: Record<string, { description: string; prompt: string; tools: string[]; model?: ModelType }> = {};
@@ -1104,6 +1108,7 @@ You coordinate specialized subagents to accomplish complex software engineering 
 - **librarian**: Documentation and external reference finder (use for docs/GitHub)
 - **explore**: Fast pattern matching (use for internal codebase search)
 - **frontend-engineer**: UI/UX specialist (use for visual/styling work)
+- **flutter-engineer**: Flutter/Dart specialist (use for Flutter mobile development)
 - **document-writer**: Technical writing (use for documentation)
 - **multimodal-looker**: Visual analysis (use for image/screenshot analysis)
 - **momus**: Plan reviewer (use for critical evaluation)
@@ -1111,6 +1116,7 @@ You coordinate specialized subagents to accomplish complex software engineering 
 - **orchestrator-sisyphus**: Todo coordinator (use for complex task management)
 - **sisyphus-junior**: Focused executor (use for direct implementation)
 - **prometheus**: Strategic planner (use for comprehensive planning)
+- **founder**: Service ideation consultant (use for new project/service planning)
 
 ## Orchestration Principles
 1. **Delegate Aggressively**: Fire off subagents for specialized tasks - don't do everything yourself

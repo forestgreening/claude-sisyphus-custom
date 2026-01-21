@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.12.0] - 2026-01-21
+
+### Added
+- **Flutter Engineer Agent** - Specialized agent for Flutter/Dart mobile development
+  - Widget composition and state management (Riverpod, BLoC, Provider)
+  - Firebase integration (Auth, Firestore, Storage, FCM)
+  - Platform-specific optimizations for iOS and Android
+  - Performance best practices and anti-patterns
+
+- **Founder Agent** - Service ideation consultant for new project planning
+  - Interview-based approach to understand user vision
+  - Generates comprehensive service planning documents
+  - Creates target user personas and MVP feature definitions
+  - Outputs to `.sisyphus/plans/founder-*.md`
+
+- **New Slash Command**: `/founder <idea>` - Start service ideation session
+
+### Changed
+- Agent count: 11 → 13
+- Updated CLAUDE.md with new agent references
+- Updated orchestrator prompts with new agent delegation options
+
 ## [1.11.0] - 2026-01-13
 
 ### Added
@@ -123,6 +145,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+[1.12.0]: https://github.com/Yeachan-Heo/oh-my-claude-sisyphus/compare/v1.11.0...v1.12.0
 [1.11.0]: https://github.com/Yeachan-Heo/oh-my-claude-sisyphus/compare/v1.10.0...v1.11.0
 [1.10.0]: https://github.com/Yeachan-Heo/oh-my-claude-sisyphus/compare/v1.9.0...v1.10.0
 [1.9.0]: https://github.com/Yeachan-Heo/oh-my-claude-sisyphus/compare/v1.8.0...v1.9.0

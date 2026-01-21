@@ -4,7 +4,7 @@
 
 [![npm version](https://badge.fury.io/js/oh-my-claude-sisyphus.svg)](https://www.npmjs.com/package/oh-my-claude-sisyphus)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Agents](https://img.shields.io/badge/Agents-11-ff0040)](https://github.com/Yeachan-Heo/oh-my-claude-sisyphus)
+[![Agents](https://img.shields.io/badge/Agents-13-ff0040)](https://github.com/Yeachan-Heo/oh-my-claude-sisyphus)
 [![Days Since Ban](https://img.shields.io/badge/Days%20Since%20Ban-0-00ffff)](https://github.com/Yeachan-Heo/oh-my-claude-sisyphus)
 [![Resurrections](https://img.shields.io/badge/Resurrections-∞-ff00ff)](https://github.com/Yeachan-Heo/oh-my-claude-sisyphus)
 
@@ -12,7 +12,7 @@
 
 *Like Sisyphus, these agents persist until every task is complete.*
 
-[Install](#quick-install) • [Usage](#usage) • [Agents](#the-eleven-agents) • [Architecture](docs/ARCHITECTURE.md) • [Website](https://yeachan-heo.github.io/oh-my-claude-sisyphus-website)
+[Install](#quick-install) • [Usage](#usage) • [Agents](#the-thirteen-agents) • [Architecture](docs/ARCHITECTURE.md) • [Website](https://yeachan-heo.github.io/oh-my-claude-sisyphus-website)
 
 </div>
 
@@ -153,6 +153,7 @@ claude
 | `/ralph-loop <task>` | Self-referential loop until task completion |
 | `/cancel-ralph` | Cancel active Ralph Loop |
 | `/update` | Check for and install updates |
+| `/founder <idea>` | Start service ideation session with Founder |
 
 ### Examples
 
@@ -321,7 +322,7 @@ Claude uses judgment to detect task type and activate appropriate skill combinat
 
 ---
 
-## The Eleven Agents
+## The Thirteen Agents
 
 Claude will automatically delegate to these specialized agents:
 
@@ -333,6 +334,7 @@ Claude will automatically delegate to these specialized agents:
 | 📚 | **Librarian** | Sonnet | Finding documentation, understanding code organization |
 | 🔍 | **Explore** | Haiku | Quick file searches, pattern matching, reconnaissance |
 | 🎨 | **Frontend Engineer** | Sonnet | UI components, styling, accessibility |
+| 📱 | **Flutter Engineer** | Sonnet | Flutter/Dart mobile development, Riverpod, Firebase |
 | 📝 | **Document Writer** | Haiku | README files, API docs, code comments |
 | 👁️ | **Multimodal Looker** | Sonnet | Analyzing screenshots, diagrams, mockups |
 
@@ -343,6 +345,7 @@ Claude will automatically delegate to these specialized agents:
 | 🔥 | **Prometheus** | Opus | Strategic planning, comprehensive work plans, interview-style requirement gathering |
 | 🎭 | **Momus** | Opus | Critical plan review, feasibility assessment, risk identification |
 | 🦉 | **Metis** | Opus | Pre-planning analysis, hidden requirement detection, ambiguity resolution |
+| 💡 | **Founder** | Opus | Service ideation, interview-style planning, MVP definition |
 
 ### Orchestration
 
@@ -547,11 +550,11 @@ The original oh-my-opencode used multiple AI providers. This port uses Claude mo
 
 | Feature | Description |
 |---------|-------------|
-| **11 Specialized Agents** | Oracle, Librarian, Explore, Frontend Engineer, Document Writer, Multimodal Looker, Momus, Metis, Orchestrator-Sisyphus, Sisyphus-Junior, Prometheus |
+| **13 Specialized Agents** | Oracle, Librarian, Explore, Frontend Engineer, Flutter Engineer, Document Writer, Multimodal Looker, Momus, Metis, Orchestrator-Sisyphus, Sisyphus-Junior, Prometheus, Founder |
 | **18 Lifecycle Hooks** | rules-injector, sisyphus-orchestrator, auto-slash-command, keyword-detector, ralph-loop, todo-continuation, context-window-limit-recovery, preemptive-compaction, session-recovery, directory-readme-injector, comment-checker, thinking-block-validator, empty-message-sanitizer, edit-error-recovery, non-interactive-env, agent-usage-reminder, background-notification, think-mode |
 | **6 Builtin Skills** | sisyphus, orchestrator, ultrawork, ralph-loop, frontend-ui-ux, git-master |
 | **Magic Keywords** | `ultrawork`, `search`, `analyze`, `ultrathink` trigger enhanced modes |
-| **Slash Commands** | `/sisyphus`, `/sisyphus-default`, `/ultrawork`, `/deepsearch`, `/analyze`, `/plan`, `/review`, `/prometheus`, `/orchestrator`, `/ralph-loop`, `/cancel-ralph`, `/update` |
+| **Slash Commands** | `/sisyphus`, `/sisyphus-default`, `/ultrawork`, `/deepsearch`, `/analyze`, `/plan`, `/review`, `/prometheus`, `/orchestrator`, `/ralph-loop`, `/cancel-ralph`, `/update`, `/founder` |
 | **Auto-Update System** | Silent background updates with manual `/update` command |
 | **Configuration System** | JSONC config with multi-source merging |
 | **Context Injection** | Auto-loads CLAUDE.md and AGENTS.md files |

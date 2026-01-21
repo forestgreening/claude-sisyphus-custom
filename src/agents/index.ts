@@ -27,12 +27,14 @@ export { exploreAgent, EXPLORE_PROMPT_METADATA } from './explore.js';
 export { librarianAgent, LIBRARIAN_PROMPT_METADATA } from './librarian.js';
 export { sisyphusJuniorAgent, SISYPHUS_JUNIOR_PROMPT_METADATA } from './sisyphus-junior.js';
 export { frontendEngineerAgent, FRONTEND_ENGINEER_PROMPT_METADATA } from './frontend-engineer.js';
+export { flutterEngineerAgent, FLUTTER_ENGINEER_PROMPT_METADATA } from './flutter-engineer.js';
 export { documentWriterAgent, DOCUMENT_WRITER_PROMPT_METADATA } from './document-writer.js';
 export { multimodalLookerAgent, MULTIMODAL_LOOKER_PROMPT_METADATA } from './multimodal-looker.js';
 export { momusAgent, MOMUS_PROMPT_METADATA } from './momus.js';
 export { metisAgent, METIS_PROMPT_METADATA } from './metis.js';
 export { orchestratorSisyphusAgent, ORCHESTRATOR_SISYPHUS_PROMPT_METADATA } from './orchestrator-sisyphus.js';
 export { prometheusAgent, PROMETHEUS_PROMPT_METADATA } from './prometheus.js';
+export { founderAgent, FOUNDER_PROMPT_METADATA } from './founder.js';
 
 // Legacy exports (backward compatibility - getAgentDefinitions and sisyphusSystemPrompt)
 export {
